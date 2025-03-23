@@ -8,8 +8,7 @@ export default function getTimeDiff(
   let diffMs = Math.abs(end.getTime() - start.getTime());
 
   const days = Math.floor(diffMs / (1000 * 60 * 60 * 24));
-  diffMs %= 1000 * 60 * 60 * 24
-
+  diffMs %= 1000 * 60 * 60 * 24;
 
   const hours = Math.floor(diffMs / (1000 * 60 * 60));
   diffMs %= 1000 * 60 * 60;
@@ -25,5 +24,10 @@ export default function getTimeDiff(
 
   const formattedSeconds = seconds < 10 ? `0${seconds}` : `${seconds}`;
 
-  return { days, hours: formattedHours, minutes: formattedMinutes, seconds: formattedSeconds };
+  return {
+    days,
+    hours: formattedHours,
+    minutes: formattedMinutes,
+    seconds: formattedSeconds,
+  };
 }
