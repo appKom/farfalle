@@ -1,10 +1,11 @@
 import './App.css';
+import Countdown from './components/Countdown';
 
 function App() {
   return (
-    <>
-      <h1 className="flex justify-center">Home</h1>
-    </>
+    <div>
+      <Countdown />
+    </div>
   );
 }
 
