@@ -14,12 +14,16 @@ export default function getTimeDiff(
   const hours = Math.floor(diffMs / (1000 * 60 * 60));
   diffMs %= 1000 * 60 * 60;
 
+  const formattedHours = hours < 10 ? `0${hours}` : `${hours}`;
+
   const minutes = Math.floor(diffMs / (1000 * 60));
   diffMs %= 1000 * 60;
+
+  const formattedMinutes = minutes < 10 ? `0${minutes}` : `${minutes}`;
 
   const seconds = Math.floor(diffMs / 1000);
 
   const formattedSeconds = seconds < 10 ? `0${seconds}` : `${seconds}`;
 
-  return { days, hours, minutes, seconds: formattedSeconds };
+  return { days, hours: formattedHours, minutes: formattedMinutes, seconds: formattedSeconds };
 }
