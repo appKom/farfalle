@@ -16,7 +16,7 @@ export default function Countdown() {
   const timeLeft = getTimeDiff(now, targetDate);
 
   return (
-    <div className="h-1/5 lg:h-1/2 flex flex-col justify-evenly items-center">
+    <div className="h-1/5 lg:h-1/2 flex flex-col justify-evenly items-center animate-flicker">
       <h1 className="font-glass text-white text-3xl lg:text-7xl">
         Online 40 års jubileum
       </h1>
