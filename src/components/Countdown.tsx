@@ -16,11 +16,9 @@ export default function Countdown() {
   const timeLeft = getTimeDiff(now, targetDate);
 
   return (
-    <div>
-      <p>
+      <h1 className='font-glass text-white text-6xl'>
         {timeLeft.days} dager {timeLeft.hours} timer {timeLeft.minutes} minutter{' '}
         {timeLeft.seconds} sekunder
-      </p>
-    </div>
+      </h1>
   );
 }
