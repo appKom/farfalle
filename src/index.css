@@ -9,6 +9,7 @@
   --font-glass: Glass, 'sans-serif';
   --animate-flicker: flicker 0.15s infinite;
   --animate-scan: scan 0.2s linear infinite;
+  --animate-scroll-indicator: scrollIndicator 1s steps(2) infinite;
 
   @keyframes scan {
     0% {
@@ -26,6 +27,21 @@
     }
     50% {
       opacity: 0.85;
+    }
+  }
+
+  @keyframes scrollIndicator {
+    0% {
+      opacity: 0.2;
+      transform: translateY(-40px);  
+    }
+    50% {
+      opacity: 0.6;
+      transform: translateY(-20px);  
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
     }
   }
 }
