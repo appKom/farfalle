@@ -20,7 +20,7 @@ export default function ScrollIndicator({ containerRef }: ScrollIndicatorProps) 
   }, [containerRef]);
 
   return (
-    <div className={`flex animate-scroll-indicator space-x-200 ${scrollY > 0 ? "invisible" : ""}`}>
+    <div className={`flex animate-scroll-indicator space-x-50 lg:space-x-200 ${scrollY > 0 ? "invisible" : ""}`}>
       <h1 className="font-glass text-white text-5xl lg:text-8xl rotate-180">^</h1>
       <h1 className="font-glass text-white text-5xl lg:text-8xl rotate-180">^</h1>
     </div>
