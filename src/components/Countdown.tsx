@@ -33,8 +33,8 @@ export default function Countdown({ containerRef }: CountdownProps) {
   const timeLeft = getTimeDiff(now, targetDate);
 
   return (
-    <div className="flex flex-col justify-center items-center animate-flicker">
-      <h1 className="font-glass text-white text-3xl lg:text-7xl mb-2">
+    <div className="flex flex-col items-center animate-flicker">
+      <h1 className="font-glass text-white text-3xl lg:text-7xl mt-82 lg:mt-70 mb-2">
         Online 40 års jubileum
       </h1>
 
